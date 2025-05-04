@@ -49,6 +49,8 @@
                    colors: {
                        clifford: "#da373d",
                        'btn-primary': '#B68C5A',
+                       'dark-02': '#414040',
+                       'dark-03': '#707070',
                    },
                },
            },
@@ -58,7 +60,7 @@
 
 <body class="poppins-regular">
     <header class="container mx-auto">
-        <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar bg-base-100 shadow-sm py-8">
             <div class="navbar-start">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -147,7 +149,7 @@
         </div>
 <!-- width: max-w-md -->
         <!-- hero section-->
-        <div class="hero w-[1170px] h-[550px]">
+        <div class="hero w-[1170px] h-[550px] mb-18">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-neutral-content text-center">
             <div class="w-[668px]">
@@ -180,16 +182,33 @@
           </div>
         </div>
 
+        <!-- background for hero section -->
         <style>
           .hero{
             background: url('/images/banner.png') center/cover no-repeat;
           }
         </style>
         
-        
     </header>
 
-    <main></main>
+    <main>
+      <!-- The Legal Practice Area -->
+       <div class="text-center w-1/2 mx-auto">
+        <h2 class="garamond-regular text-5xl font-extrabold text-dark-02">The Legal Practice Area</h2>
+        <p class="text-lg py-4 text-dark-03">There are many variations of passages 
+          of Lorem Ipsum available, but the majority
+          have suffered alteration in some form, 
+          by injected humour.
+        </p>
+        <!-- card-container -->
+        <div><img src="/images/business.png" alt=""></div>
+        <div><img src="/images/business.png" alt=""></div>
+        <div><img src="/images/business.png" alt=""></div>
+        <div><img src="/images/business.png" alt=""></div>
+        <div><img src="/images/business.png" alt=""></div>
+        <div><img src="/images/business.png" alt=""></div>
+       </div>
+    </main>
 
     <footer></footer>
 </body>
