@@ -34,7 +34,6 @@
     }
      </style>
 
-
     <!-- tailwindCSS and daisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -60,15 +59,15 @@
 
 <body class="poppins-regular">
     <header class="container mx-auto">
-        <div class="navbar bg-base-100 shadow-sm py-8">
+        <div class="navbar bg-base-100 shadow-sm rounded- px-10 py-8">
             <div class="navbar-start">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill=" px-10" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                 </div>
                 <ul
                   tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                  class="menu menu-sm rounded- px-10 dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                   <li><a>Home</a></li>
                   <li>
                     <a>Services</a>
@@ -166,7 +165,7 @@
                       stroke-linejoin="round"
                       stroke-linecap="round"
                       stroke-width="2.5"
-                      fill="none"
+                      fill=" px-10"
                       stroke="currentColor"
                     >
                       <circle cx="11" cy="11" r="8"></circle>
@@ -193,23 +192,136 @@
 
     <main>
       <!-- The Legal Practice Area -->
-       <div class="text-center w-1/2 mx-auto">
+       <div class="text-center w-1/2 mx-auto mb-10">
         <h2 class="garamond-regular text-5xl font-extrabold text-dark-02">The Legal Practice Area</h2>
         <p class="text-lg py-4 text-dark-03">There are many variations of passages 
           of Lorem Ipsum available, but the majority
           have suffered alteration in some form, 
           by injected humour.
         </p>
-        <!-- card-container -->
-        <div><img src="/images/business.png" alt=""></div>
-        <div><img src="/images/business.png" alt=""></div>
-        <div><img src="/images/business.png" alt=""></div>
-        <div><img src="/images/business.png" alt=""></div>
-        <div><img src="/images/business.png" alt=""></div>
-        <div><img src="/images/business.png" alt=""></div>
        </div>
+
+        <!-- card-container -->
+         <div class="grid grid-cols-3 w-4/6 mx-auto divide-x divide-y divide-gray-200 gap-0 text-center">
+          <!-- <div><img src="/images/business.png" alt=""></div>
+          <div><img src="/images/criminal.png" alt=""></div>
+          <div><img src="/images/child.png" alt=""></div>
+          <div><img src="/images/education.png" alt=""></div>
+          <div><img src="/images/divorce.png" alt=""></div>
+          <div><img src="/images/tax.png" alt=""></div> -->
+
+          <!-- card-01 -->
+           <div class="card bg-base-100 w-full shadow-sm rounded-none px-10">
+              <figure>
+                <img
+                  src="/images/business.png"
+                  alt="" />
+              </figure>
+              <div class="card-body space-y-4">
+                <h2 class="card-title garamond-regular text-3xl font-extrabold text-dark-02 mx-auto">Business Law</h2>
+                <p class="text-dark-03">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                
+                <div  class="w-10 mx-auto">
+                  <a href=""><img src="/images/Frame.png" alt=""></a>
+                </div>
+                
+              </div>
+           </div>
+
+          <!-- card-02 -->
+           <div class="card bg-base-100 w-full shadow-sm rounded-none px-10">
+            <figure>
+              <img
+                src="/images/criminal.png"
+                alt="" />
+            </figure>
+            <div class="card-body space-y-4">
+              <h2 class="card-title garamond-regular text-3xl font-extrabold text-dark-02 mx-auto">Criminal Law</h2>
+              <p class="text-dark-03">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              
+              <div  class="w-10 mx-auto">
+                <a href=""><img src="/images/Frame.png" alt=""></a>
+              </div>
+              
+            </div>
+           </div>
+
+           <!-- card-03 -->
+            <div class="card bg-base-100 w-full shadow-sm rounded-none px-10">
+              <figure>
+                <img src="/images/child.png" alt="" />
+              </figure>
+              <div class="card-body space-y-4">
+                <h2 class="card-title garamond-regular text-3xl font-extrabold text-dark-02 mx-auto">Child Support</h2>
+                <p class="text-dark-03">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              
+                <div  class="w-10 mx-auto">
+                <a href=""><img src="/images/Frame.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+
+          <!-- card-04 -->
+           <div class="card bg-base-100 w-full shadow-sm rounded-none px-10">
+              <figure>
+                <img
+                  src="/images/education.png"
+                  alt="" />
+              </figure>
+              <div class="card-body space-y-4">
+                <h2 class="card-title garamond-regular text-3xl font-extrabold text-dark-02 mx-auto">Education Law</h2>
+                <p class="text-dark-03">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                
+                <div  class="w-10 mx-auto">
+                  <a href=""><img src="/images/Frame.png" alt=""></a>
+                </div>
+                
+              </div>
+           </div>
+
+          <!-- card-05 -->
+           <div class="card bg-base-100 w-full shadow-sm rounded-none px-10">
+            <figure>
+              <img
+                src="/images/divorce.png"
+                alt="" />
+            </figure>
+            <div class="card-body space-y-4">
+              <h2 class="card-title garamond-regular text-3xl font-extrabold text-dark-02 mx-auto">Divorce Law</h2>
+              <p class="text-dark-03">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              
+              <div  class="w-10 mx-auto">
+                <a href=""><img src="/images/Frame.png" alt=""></a>
+              </div>
+              
+            </div>
+            </div>
+
+          <!-- card-06 -->
+           <div class="card bg-base-100 w-full shadow-sm rounded-none px-10">
+            <figure>
+              <img
+                src="/images/tax.png"
+                alt="" />
+            </figure>
+            <div class="card-body space-y-4">
+              <h2 class="card-title garamond-regular text-3xl font-extrabold text-dark-02 mx-auto">Tax Law</h2>
+              <p class="text-dark-03">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              
+              <div  class="w-10 mx-auto">
+                <a href=""><img src="/images/Frame.png" alt=""></a>
+              </div>
+              
+            </div>
+           </div>
+
+         </div>
+        
+       
     </main>
 
     <footer></footer>
 </body>
 </html>
+
+<!-- div -->
