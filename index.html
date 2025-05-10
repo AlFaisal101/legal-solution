@@ -34,13 +34,20 @@
     }
      </style>
 
-    <!-- tailwindCSS and daisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- ✅ Always load Tailwind from official CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ✅ DaisyUI CSS for components -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" />
+
+    <!-- the below links come in daisyUI official sites where 2nd line is conflicting 
+    as @tailwindcss/browser@4 doesn't support the full Tailwind ecosystem (like gradients, custom config, etc.) reliably.
+    so the 2nd line should be commented. so the upper CDN setup is perfect for now -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" /> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
     <!-- tailwindcss custom -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script>
        tailwind.config = {
            theme: {
@@ -54,7 +61,8 @@
                },
            },
        };
-   </script> 
+   </script>
+    
 </head>
 
 <body class="poppins-regular">
@@ -96,7 +104,7 @@
               <!-- logo -->
               <div class="flex">
                 <a class="btn btn-ghost text-xl">
-                  <img src="/images/logo2.png" alt="">
+                  <img src="./images/logo2.png" alt="">
                 </a>
               </div>
             </div>
@@ -184,7 +192,7 @@
         <!-- background for hero section -->
         <style>
           .hero{
-            background: url('/images/banner.png') center/cover no-repeat;
+            background: url('./images/banner.png') center/cover no-repeat;
           }
         </style>
         
@@ -214,7 +222,7 @@
            <div class="card bg-base-100 w-full rounded-none px-10 py-8 border-r border-b">
               <figure>
                 <img
-                  src="/images/business.png"
+                  src="./images/business.png"
                   alt="..." />
               </figure>
               <div class="card-body space-y-4">
@@ -229,34 +237,33 @@
            </div>
 
           <!-- card-02 -->
-           <div class="card w-full bg-gradient-to-b from-gray-500 to-gray-100 rounded-none px-10 py-8 border-r border-b">
-            <figure>
+           <div class="w-full bg-gradient-to-b from-gray-100 to-gray-300 rounded-none px-10 py-8 border-r border-b">
+            <figure class="flex justify-center">
               <img
                 src="./images/criminal.png"
                 alt="" />
             </figure>
-            <div class="card-body space-y-4">
+            <div class="card-body space-y-4 ">
               <h2 class="card-title garamond-regular text-3xl font-extrabold text-dark-02 mx-auto">Criminal Law</h2>
               <p class="text-dark-03">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-              
+
               <div  class="w-10 mx-auto">
-                <a href=""><img src="/images/Frame.png" alt=""></a>
+                <a href=""><img src="./images/Frame.png" alt=""></a>
               </div>
-              
             </div>
            </div>
 
           <!-- card-03 -->
            <div class="card bg-base-100 w-full  rounded-none px-10 py-8 border-b">
               <figure>
-                <img src="/images/child.png" alt="" />
+                <img src="./images/child.png" alt="" />
               </figure>
               <div class="card-body space-y-4">
                 <h2 class="card-title garamond-regular text-3xl font-extrabold text-dark-02 mx-auto">Child Support</h2>
                 <p class="text-dark-03">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
               
                 <div  class="w-10 mx-auto">
-                <a href=""><img src="/images/Frame.png" alt=""></a>
+                <a href=""><img src="./images/Frame.png" alt=""></a>
                 </div>
               </div>
            </div>
@@ -265,7 +272,7 @@
            <div class="card bg-base-100 w-full  rounded-none px-10 py-8 border-r border-b">
               <figure>
                 <img
-                  src="/images/education.png"
+                  src="./images/education.png"
                   alt="" />
               </figure>
               <div class="card-body space-y-4">
@@ -273,7 +280,7 @@
                 <p class="text-dark-03">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                 
                 <div  class="w-10 mx-auto">
-                  <a href=""><img src="/images/Frame.png" alt=""></a>
+                  <a href=""><img src="./images/Frame.png" alt=""></a>
                 </div>
                 
               </div>
@@ -283,7 +290,7 @@
            <div class="card bg-base-100 w-full  rounded-none px-10 py-8 border-r border-b">
             <figure>
               <img
-                src="/images/divorce.png"
+                src="./images/divorce.png"
                 alt="" />
             </figure>
             <div class="card-body space-y-4">
@@ -291,7 +298,7 @@
               <p class="text-dark-03">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
               
               <div  class="w-10 mx-auto">
-                <a href=""><img src="/images/Frame.png" alt=""></a>
+                <a href=""><img src="./images/Frame.png" alt=""></a>
               </div>
               
             </div>
@@ -301,7 +308,7 @@
            <div class="card bg-base-100 w-full  rounded-none px-10 py-8 border-b">
             <figure>
               <img
-                src="/images/tax.png"
+                src="./images/tax.png"
                 alt="" />
             </figure>
             <div class="card-body space-y-4">
@@ -309,7 +316,7 @@
               <p class="text-dark-03">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
               
               <div  class="w-10 mx-auto">
-                <a href=""><img src="/images/Frame.png" alt=""></a>
+                <a href=""><img src="./images/Frame.png" alt=""></a>
               </div>
               
             </div>
@@ -320,8 +327,7 @@
        
     </main>
 
-    <footer></footer>
+    <footer>
+    </footer>
 </body>
 </html>
-
-<!-- div -->
