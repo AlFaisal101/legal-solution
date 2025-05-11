@@ -66,6 +66,7 @@
 </head>
 
 <body class="poppins-regular">
+  <!-- header -->
     <header class="container mx-auto">
         <div class="navbar bg-base-100 shadow-sm rounded- px-10 py-8">
             <div class="navbar-start">
@@ -198,9 +199,9 @@
         
     </header>
 
-    <main>
+    <main class="container mx-auto">
       <!-- The Legal Practice Area -->
-       <div class="text-center w-1/2 mx-auto mb-10">
+       <div class="text-center w-1/2 mx-auto">
         <h2 class="garamond-regular text-5xl font-extrabold text-dark-02">The Legal Practice Area</h2>
         <p class="text-lg py-4 text-dark-03">There are many variations of passages 
           of Lorem Ipsum available, but the majority
@@ -209,15 +210,9 @@
         </p>
        </div>
 
-        <!-- card-container -->
-         <div class="grid grid-cols-3 w-4/6 mx-auto gap-0 text-center">
-          <!-- <div><img src="/images/business.png" alt=""></div>
-          <div><img src="/images/criminal.png" alt=""></div>
-          <div><img src="/images/child.png" alt=""></div>
-          <div><img src="/images/education.png" alt=""></div>
-          <div><img src="/images/divorce.png" alt=""></div>
-          <div><img src="/images/tax.png" alt=""></div> -->
-
+      <!-- card-container -->
+       <div class="grid grid-cols-3 w-4/6 mx-auto gap-0 text-center">
+          
           <!-- card-01 -->
            <div class="card bg-base-100 w-full rounded-none px-10 py-8 border-r border-b">
               <figure>
@@ -237,7 +232,7 @@
            </div>
 
           <!-- card-02 -->
-           <div class="w-full bg-gradient-to-b from-gray-100 to-gray-300 rounded-none px-10 py-8 border-r border-b">
+           <div class="w-full bg-gradient-to-b from-gray-100 to-white-10 rounded-none px-10 py-8 border-r border-b">
             <figure class="flex justify-center">
               <img
                 src="./images/criminal.png"
@@ -269,7 +264,7 @@
            </div>
 
           <!-- card-04 -->
-           <div class="card bg-base-100 w-full  rounded-none px-10 py-8 border-r border-b">
+           <div class="card bg-base-100 w-full  rounded-none px-10 py-8 border-r">
               <figure>
                 <img
                   src="./images/education.png"
@@ -287,7 +282,7 @@
            </div>
 
           <!-- card-05 -->
-           <div class="card bg-base-100 w-full  rounded-none px-10 py-8 border-r border-b">
+           <div class="card bg-base-100 w-full  rounded-none px-10 py-8 border-r">
             <figure>
               <img
                 src="./images/divorce.png"
@@ -305,7 +300,7 @@
            </div>
 
           <!-- card-06 -->
-           <div class="card bg-base-100 w-full  rounded-none px-10 py-8 border-b">
+           <div class="card bg-base-100 w-full  rounded-none px-10 py-8">
             <figure>
               <img
                 src="./images/tax.png"
@@ -321,10 +316,53 @@
               
             </div>
            </div>
+       </div>
 
-         </div>
-        
-       
+       <!-- What Our Client Say -->
+        <div class="text-center mt-16 space-y-6 w-1/2 mx-auto">
+          <h2 class="garamond text-4xl font-extrabold text-dark-02 ">What Our Client Say</h2>
+          <p class="text-lg text-dark-03">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        </div>
+        <!-- carousel -->
+        <div class="carousel w-full mt-12">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+              class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+              class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+              class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+              class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+  
     </main>
 
     <footer>
