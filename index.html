@@ -157,38 +157,40 @@
         </div>
 <!-- width: max-w-md -->
         <!-- hero section-->
-        <div class="hero w-[1170px] h-[550px] mb-18">
-          <div class="hero-overlay bg-opacity-60"></div>
-          <div class="hero-content text-neutral-content text-center">
-            <div class="w-[668px]">
-              <h1 class="mb-5 text-7xl font-extrabold garamond-regular">We Provide Effective <br> Legal Solutions</h1>
-              <p class="mb-5">
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
-              </p>
-              <!-- input and search container -->
-               <div class="flex gap-5 place-content-center">
-                <!-- input -->
-                <label class="input w-[479px] h-[48px]">
-                  <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <g
-                      stroke-linejoin="round"
-                      stroke-linecap="round"
-                      stroke-width="2.5"
-                      fill=" px-10"
-                      stroke="currentColor"
-                    >
-                      <circle cx="11" cy="11" r="8"></circle>
-                      <path d="m21 21-4.3-4.3"></path>
-                    </g>
-                  </svg>
-                  <input type="search" required placeholder="Search your services" />
-                </label>
-                <!-- search-button -->
-                <button class="btn btn-primary bg-btn-primary px-3 py-6">Search</button>
+         <div class="grid place-content-center">
+          <div class="hero w-[1170px] h-[550px] mb-18">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center">
+              <div class="w-[668px]">
+                <h1 class="mb-5 text-7xl font-extrabold garamond-regular">We Provide Effective <br> Legal Solutions</h1>
+                <p class="mb-5">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <!-- input and search container -->
+                 <div class="flex gap-5 place-content-center">
+                  <!-- input -->
+                  <label class="input w-[479px] h-[48px]">
+                    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <g
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        stroke-width="2.5"
+                        fill=" px-10"
+                        stroke="currentColor"
+                      >
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                      </g>
+                    </svg>
+                    <input type="search" required placeholder="Search your services" />
+                  </label>
+                  <!-- search-button -->
+                  <button class="btn btn-primary bg-btn-primary px-3 py-6">Search</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+         </div>
 
         <!-- background for hero section -->
         <style>
@@ -324,141 +326,148 @@
           <p class="text-lg text-dark-03">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
         </div>
         <!-- carousel -->
-        <div class="carousel w-full">
-          <!-- slide 01 -->
-          <div id="slide1" class="carousel-item relative w-full">
-            <img
-              src="./images/slider-1.jpg" 
-              class="" />
-
-              <!-- Testimonial content -->
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                <div class="text-center text-white p-6 w-3/4">
-                  <img 
-                    src="https://randomuser.me/api/portraits/women/44.jpg"
-                    alt="Client Photo"
-                    class="w-16 h-16 rounded-full mx-auto mb-4 border-2 border-white" />
-                  <h3 class="text-xl font-semibold">Jane Doe</h3>
-                  <p class="text-sm text-gray-200 mb-2">Marketing Manager, XYZ Inc.</p>
-                  <p class="text-sm">"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur."</p>
+         <div class="grid place-content-center">
+          <div class="carousel w-[1170px] h-[500px] mx-auto">
+            <!-- slide 01 -->
+            <div id="slide1" class="carousel-item relative w-full">
+              <img
+                src="./images/slider-1.jpg" 
+                class="w-full h-full object-cover" />
+  
+                <!-- Testimonial content -->
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                  <div class="text-center text-white p-6 w-3/4">
+                    <img 
+                      src="https://64.media.tumblr.com/cc274401aa0922a761804920b191c61d/b8cd43d151caa4ab-ad/s1280x1920/482eac34785cdd10b9ae03bb4c9db50d7702aa0b.jpg"
+                      alt="Client Photo"
+                      class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white" />
+                    <h3 class="text-xl font-semibold">Jane Doe</h3>
+                    <p class="text-sm text-gray-200 mb-2">Marketing Manager, XYZ Inc.</p>
+                    <p class="text-sm">"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur."</p>
+                  </div>
                 </div>
+  
+             <!-- Navigation buttons -->
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
-
-           <!-- Navigation buttons -->
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide4" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
+  
+              <!-- slider scroll tabs -->
+              <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                <a href="#slide1" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+                <a href="#slide2" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+                <a href="#slide3" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+                <a href="#slide4" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+              </div>
             </div>
-
-            <!-- slider scroll tabs -->
-            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-              <a href="#slide1" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-              <a href="#slide2" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-              <a href="#slide3" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-              <a href="#slide4" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+            <!-- slide 02 -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <img
+                src="./images/slider-2.jpg" 
+                class="w-full h-full object-cover" />
+  
+                <!-- Testimonial content -->
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                  <div class="text-center text-white p-6 w-3/4">
+                    <img 
+                      src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp"
+                      alt="Client Photo"
+                      class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white" />
+                    <h3 class="text-xl font-semibold">Jane Doe</h3>
+                    <p class="text-sm text-gray-200 mb-2">Marketing Manager, XYZ Inc.</p>
+                    <p class="text-sm">"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur."</p>
+                  </div>
+                </div>
+  
+             <!-- Navigation buttons -->
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+  
+              <!-- slider scroll tabs -->
+              <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                <a href="#slide1" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+                <a href="#slide2" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+                <a href="#slide3" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+                <a href="#slide4" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+              </div>
+            </div>
+            <!-- slide 03 -->
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="./images/slider-3.jpg" 
+                class="w-full h-full object-cover" />
+  
+                <!-- Testimonial content -->
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                  <div class="text-center text-white p-6 w-3/4">
+                    <img 
+                      src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp"
+                      alt="Client Photo"
+                      class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white" />
+                    <h3 class="text-xl font-semibold">Jane Doe</h3>
+                    <p class="text-sm text-gray-200 mb-2">Marketing Manager, XYZ Inc.</p>
+                    <p class="text-sm">"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur."</p>
+                  </div>
+                </div>
+  
+             <!-- Navigation buttons -->
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+  
+              <!-- slider scroll tabs -->
+              <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                <a href="#slide1" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+                <a href="#slide2" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+                <a href="#slide3" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+                <a href="#slide4" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+              </div>
+            </div>
+            <!-- slide 04 -->
+            <div id="slide4" class="carousel-item relative w-full">
+              <img
+                src="./images/closeup-gavel-judgement-concept.jpg" 
+                class="w-full h-full object-cover" />
+  
+                <!-- Testimonial content -->
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                  <div class="text-center text-white p-6 w-3/4">
+                    <img 
+                      src="https://www.nicepng.com/png/detail/766-7663669_kirby-face-on-thanos-thanos-head-transparent-background.png"
+                      alt="Client Photo"
+                      class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-white" />
+                    <h3 class="text-xl font-semibold">Jane Doe</h3>
+                    <p class="text-sm text-gray-200 mb-2">Marketing Manager, XYZ Inc.</p>
+                    <p class="text-sm">"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur."</p>
+                  </div>
+                </div>
+  
+             <!-- Navigation buttons -->
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+  
+              <!-- slider scroll tabs -->
+              <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                <a href="#slide1" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+                <a href="#slide2" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+                <a href="#slide3" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+                <a href="#slide4" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
+              </div>
             </div>
           </div>
-          <!-- slide 02 -->
-          <div id="slide2" class="carousel-item relative w-full">
-            <img
-              src="./images/slider-2.jpg" 
-              class="" />
+         </div>
 
-              <!-- Testimonial content -->
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                <div class="text-center text-white p-6 w-3/4">
-                  <img 
-                    src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp"
-                    alt="Client Photo"
-                    class="w-16 h-16 rounded-full mx-auto mb-4 border-2 border-white" />
-                  <h3 class="text-xl font-semibold">Jane Doe</h3>
-                  <p class="text-sm text-gray-200 mb-2">Marketing Manager, XYZ Inc.</p>
-                  <p class="text-sm">"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur."</p>
-                </div>
-              </div>
-
-           <!-- Navigation buttons -->
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide1" class="btn btn-circle">❮</a>
-              <a href="#slide3" class="btn btn-circle">❯</a>
-            </div>
-
-            <!-- slider scroll tabs -->
-            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-              <a href="#slide1" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-              <a href="#slide2" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-              <a href="#slide3" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-              <a href="#slide4" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-            </div>
+         <!-- FAQ -->
+          <div class="grid place-content-center place-items-center mt-24 w-3/6 mx-auto text-center space-y-4">
+            <h2 class="garamond font-extrabold text-4xl text-dark-02">Frequently Asked Any Questions</h2>
+            <p class="text-lg text-dark-03">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
           </div>
-          <!-- slide 03 -->
-          <div id="slide3" class="carousel-item relative w-full">
-            <img
-              src="./images/slider-3.jpg" 
-              class="" />
-
-              <!-- Testimonial content -->
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                <div class="text-center text-white p-6 w-3/4">
-                  <img 
-                    src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp"
-                    alt="Client Photo"
-                    class="w-16 h-16 rounded-full mx-auto mb-4 border-2 border-white" />
-                  <h3 class="text-xl font-semibold">Jane Doe</h3>
-                  <p class="text-sm text-gray-200 mb-2">Marketing Manager, XYZ Inc.</p>
-                  <p class="text-sm">"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur."</p>
-                </div>
-              </div>
-
-           <!-- Navigation buttons -->
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide4" class="btn btn-circle">❯</a>
-            </div>
-
-            <!-- slider scroll tabs -->
-            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-              <a href="#slide1" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-              <a href="#slide2" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-              <a href="#slide3" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-              <a href="#slide4" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-            </div>
-          </div>
-          <!-- slide 04 -->
-          <div id="slide4" class="carousel-item relative w-full">
-            <img
-              src="./images/closeup-gavel-judgement-concept.jpg" 
-              class="" />
-
-              <!-- Testimonial content -->
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                <div class="text-center text-white p-6 w-3/4">
-                  <img 
-                    src="https://randomuser.me/api/portraits/men/44.jpg"
-                    alt="Client Photo"
-                    class="w-16 h-16 rounded-full mx-auto mb-4 border-2 border-white" />
-                  <h3 class="text-xl font-semibold">Jane Doe</h3>
-                  <p class="text-sm text-gray-200 mb-2">Marketing Manager, XYZ Inc.</p>
-                  <p class="text-sm">"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur."</p>
-                </div>
-              </div>
-
-           <!-- Navigation buttons -->
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide3" class="btn btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
-
-            <!-- slider scroll tabs -->
-            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-              <a href="#slide1" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-              <a href="#slide2" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-              <a href="#slide3" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-              <a href="#slide4" class="text-white text-3xl opacity-50 hover:opacity-100">_</a>
-            </div>
-          </div>
-        </div>
-
   
     </main>
 
