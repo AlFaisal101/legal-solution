@@ -1,0 +1,31 @@
+
+/* .item.active .activeIcon{
+    display: block;
+} */
+
+.item .activeIcon{
+    display: none;
+}
+
+.item.active .inactiveIcon{
+    display: none;
+}
+
+.item.active .activeIcon{
+    display: block;
+}
+
+.item:not(.active) .content{
+    overflow: hidden;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    height: 0;
+}
+
+.item .content{
+    padding: 2rem;
+    /* padding-right: 2rem; */
+    /* display: flex;
+    flex-direction: column; */
+    height: 250px;
+}
