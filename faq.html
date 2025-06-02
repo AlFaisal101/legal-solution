@@ -7,8 +7,31 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="style2.css">
+
+    <!-- cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- tailwindcss custom -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+       tailwind.config = {
+           theme: {
+               extend: {
+                   colors: {
+                       clifford: "#da373d",
+                       'btn-primary': '#B68C5A',
+                       'dark-02': '#414040',
+                       'dark-03': '#707070',
+                       'dark-07': '#F3F3F3',
+                   },
+               },
+           },
+       };
+   </script>
+
 </head>
-<body class="">
+<body class="container mx-auto">
     <!-- accordion container -->
     <section class="flex justify-center items-center bg-slate-600 h-screen text-white">
         <div
@@ -103,10 +126,88 @@
                   </div>
               </div> -->
         </div>
-       </section>
-     
-     <script src="script.js">
-     </script>
+    </section>
+
+    <!-- input-field -->
+    <fieldset class="fieldset w-xs p-8">
+        <!-- <legend class="fieldset-legend pt-14">Login</legend> -->
+      
+        <input type="text" class="input px-2 bg-[#F3F3F3]" placeholder="Your Name" />
+        <input type="email" class="input px-2 bg-[#F3F3F3]" placeholder="Your Email" />
+        <input type="text" class="input px-2 bg-[#F3F3F3]" placeholder="Your Subject" />
+        <input type="text" class="input px-2 bg-[#F3F3F3] h-[162px]" placeholder="Your Message" />
+      
+        <button class="btn btn-neutral mt-4 bg-btn-primary text-white">Send Message</button>
+    </fieldset>
+
+      <!-- <div class="grid grid-cols-1">
+        <input type="text" class="input px-2 bg-F3F3F3" placeholder="Your Name" />
+        <input type="email" class="input px-2" placeholder="Your Email" />
+        <input type="text" class="input px-2" placeholder="Your Subject" />
+        <input type="text" class="input px-2 h-10" placeholder="Your Message" />
+      </div> -->
+
+     <br><br>
+
+      <footer class="bg-[#111111] text-base-content px-40 py-10 mt-20 text-white">
+        <div class="flex flex-wrap justify-center items-center gap-10 max-w-7xl mx-auto">
+          <!-- logo & description -->
+          <nav class="w-64">
+            <h6 class="footer-title"><img src="./images/logo.png" alt=""></h6>
+            <p class="mt-4">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+            </p>
+          </nav>
+          <!-- useful links -->
+          <nav class="w-48">
+            <h6 class="text-2xl font-extrabold garamond-regular mb-4">Useful Link</h6>
+            <a class="link link-hover">Homes</a>
+            <a class="link link-hover">About Us</a>
+            <a class="link link-hover">Cases</a>
+            <a class="link link-hover">Blog</a>
+            <a class="link link-hover">Contact Us</a>
+          </nav>
+          <!-- contact now -->
+          <nav class="w-64">
+            <h6 class="text-2xl font-extrabold garamond-regular text-white mb-4">Contact Now</h6>
+            <p class="link link-hover w-1/2">555 4th 5t NW, Washington DC 20530, United States</p>
+            <a class="link link-hover">+88 01750 000 000 <br>
+              +88 01750 000 000</a>
+            <a class="link link-hover">info@gmail.com <br>
+              info@gmail.com</a>
+          </nav>
+          <!-- subscribe -->
+          <form class="w-72">
+            <h6 class="text-2xl font-extrabold garamond-regular text-white">Subscribe</h6>
+            <fieldset class="w-80">
+              <label>Subscribe for our latest & Articles. We Won’t Give You Spam Mails</label>
+              <div class="join">
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  class="input input-bordered join-item p-8" />
+                <a class="btn bg-btn-primary join-item p-[32px]">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke-width="1.5" 
+                    stroke="currentColor" 
+                    class="size-6">
+                      <path 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round" 
+                      d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                </svg>
+                </a>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </footer>
+      <br>
+
+     <script src="script.js"> </script>
       
 </body>
 </html>
